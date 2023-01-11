@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Poppins:wght@300&display=swap');
+header {
+    background-color:rgb(43, 102, 231);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding: 20px;
+    margin-left:20%;
+    margin-right: 20%;
+}
+#profile {
+    width: 25%;
+   
+}
+h1 {
+    padding-left: 40px;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+main h2 {
+    grid-column:2/3;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 30px;
+
+}
+main .lessons {
+    grid-column: 2/3;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+footer {
+   
+    background-color:rgb(43, 102, 231);
+    padding: 25px 50px; 
+    margin-top: 50px;
+    margin-left:20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3 {
+    color: white;
+    font-family: "Poppins", Helvetica, sans-serif;
+}
