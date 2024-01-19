@@ -1,0 +1,14 @@
+@media screen and (min-width: 500px) {
+  .navigation {
+    flex-flow: row;
+  }
+  nav ul li {
+    flex: 1 1 auto;
+  }
+  .card {
+    grid-column: span 1;
+  }
+  h1 {
+    font-size: flex;
+  }
+}
