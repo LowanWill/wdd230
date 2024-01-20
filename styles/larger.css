@@ -8,7 +8,4 @@
   .card {
     grid-column: span 1;
   }
-  h1 {
-    font-size: flex;
-  }
 }

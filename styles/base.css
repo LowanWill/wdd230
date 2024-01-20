@@ -2,38 +2,30 @@
 
 header {
   background-color: rgb(147, 120, 199);
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
-  column-gap: 3rem;
-  padding: 2rem 0;
+  gap: 1.5rem;
 }
 
 header img {
-  grid-column: 1/2;
-  margin-top: -100px;
-  padding-right: 100px;
+  margin-top: 10px;
 }
 
 h1 {
   font-family: "Lato";
-  grid-column: 2/3;
   font-size: 3.5rem;
-  margin-top: 150px;
-  margin-bottom: -85px;
 }
 
 nav {
   background-color: bisque;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 .navigation {
   display: flex;
   flex-flow: column;
   text-align: center;
-  gap: 1rem;
   list-style-type: none;
   font-family: "Crimson Text";
   font-size: 1.5rem;
@@ -43,7 +35,6 @@ nav ul li a {
   color: black;
   text-align: center;
   font-size: 1.5rem;
-  padding: 1rem;
 }
 
 main {
