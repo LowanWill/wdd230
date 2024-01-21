@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato&display=swap");
 
 header {
-  background-color: rgb(147, 120, 199);
+  background-color: #b9fbc0;
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -20,7 +20,7 @@ h1 {
 }
 
 nav {
-  background-color: bisque;
+  background-color: #fbf8cc;
   padding: 1rem;
 }
 .navigation {
@@ -72,14 +72,14 @@ main h2 {
   font-family: "Crimson Text", Helvetica, sans-serif;
   text-align: center;
   padding: 0.5rem;
-  background-color: rgb(147, 120, 199);
+  background-color: #b9fbc0;
 }
 .card p {
   font-family: "Crimson Text", Helvetica, sans-serif;
   text-align: center;
 }
 footer {
-  background: rgb(147, 120, 199);
+  background-color: #b9fbc0;
   padding: 2rem;
   text-align: center;
   grid-column: 1 / 3;
