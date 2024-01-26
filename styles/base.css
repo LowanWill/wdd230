@@ -101,7 +101,12 @@ main h2 {
 }
 
 iframe {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
 }
 footer {
   background-color: #b9fbc0;
