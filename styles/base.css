@@ -19,23 +19,44 @@ h1 {
   font-size: 3.5rem;
 }
 
+#menu {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: #fbf8cc;
+  color: #000;
+}
+
+#menu::before {
+  content: "≡";
+}
+
 nav {
   background-color: #fbf8cc;
-  padding: 1rem;
 }
+
+.navigation a:hover,
+navigation a:active {
+  color: white;
+  background-color: black;
+}
+
 .navigation {
-  display: flex;
-  flex-flow: column;
-  text-align: center;
-  list-style-type: none;
+  list-style: none;
+  margin: 0 auto;
   font-family: "Crimson Text";
   font-size: 1.5rem;
 }
-nav ul li a {
-  font-family: "Crimson Text", Helvetica, sans-serif;
-  color: black;
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem;
   text-align: center;
-  font-size: 1.5rem;
 }
 
 main {
@@ -78,10 +99,22 @@ main h2 {
   font-family: "Crimson Text", Helvetica, sans-serif;
   text-align: center;
 }
+
+iframe {
+  width: 100%;
+}
 footer {
   background-color: #b9fbc0;
   padding: 2rem;
   text-align: center;
   grid-column: 1 / 3;
   font-family: "Lato", Helvetica, sans-serif;
+}
+
+.show li {
+  display: block;
+}
+
+#menu.show::before {
+  content: "X";
 }
