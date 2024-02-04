@@ -5,8 +5,13 @@
   nav ul li {
     flex: 1 1 auto;
   }
-  .card {
-    grid-column: span 1;
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .spotlight {
+    grid-column: 1/3;
   }
   .navigation {
     display: flex;
