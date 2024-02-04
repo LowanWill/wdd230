@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato&display=swap");
 
+:root {
+  --primary-color: #8fc0a9;
+  --secondary-color: #c8d5b9;
+  --lightest-color: #faf3dd;
+  --dark-text-color: black;
+}
+
 header {
-  background-color: #b9fbc0;
+  background: var(--primary-color);
+  width: 100%;
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-}
-
-header img {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 h1 {
@@ -25,22 +28,20 @@ h1 {
   font-weight: 500;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
-  background-color: #fbf8cc;
-  color: hsl(0, 0%, 0%);
+  background-color: var(--lightest-color);
 }
 
 #menu::before {
   content: "≡";
 }
-
 nav {
-  background-color: #fbf8cc;
+  background-color: var(--lightest-color);
 }
 
 .navigation a:hover,
 .navigation a:active {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: var(--secondary-color);
 }
 
 .navigation {
@@ -68,14 +69,14 @@ main {
   gap: 2rem;
   padding: 2rem;
 }
-
+/* just in case for later....
 main h2 {
   grid-column: 1 / 3;
   text-align: center;
   font-family: "Crimson Text", Helvetica, sans-serif;
   font-size: 2rem;
 }
-
+*/
 .card {
   grid-column: 1 /3;
   border-radius: 0.2rem;
@@ -93,23 +94,15 @@ main h2 {
   font-family: "Crimson Text", Helvetica, sans-serif;
   text-align: center;
   padding: 0.5rem;
-  background-color: #b9fbc0;
+  background-color: var(--secondary-color);
 }
 .card p {
   font-family: "Crimson Text", Helvetica, sans-serif;
   text-align: center;
 }
 
-iframe {
-  width: 80%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  padding: 2rem;
-}
 footer {
-  background-color: #b9fbc0;
+  background-color: var(--primary-color);
   padding: 2rem;
   text-align: center;
   grid-column: 1 / 3;
