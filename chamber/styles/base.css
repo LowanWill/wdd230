@@ -4,7 +4,8 @@
   --primary-color: #8fc0a9;
   --secondary-color: #c8d5b9;
   --lightest-color: #faf3dd;
-  --dark-text-color: black;
+  --dark-text-color: #faf3dd;
+  --dark-background-color: black;
 }
 
 header {
@@ -20,6 +21,15 @@ header {
 h1 {
   font-family: "Lato";
   font-size: 3.5rem;
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }
 
 #menu {
@@ -61,13 +71,14 @@ nav {
 }
 
 main {
-  width: 80%;
+  max-width: 500px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   gap: 2rem;
   padding: 2rem;
+  background-color: white;
 }
 /* just in case for later....
 main h2 {
@@ -77,6 +88,36 @@ main h2 {
   font-size: 2rem;
 }
 */
+#hero {
+  position: relative;
+  height: 300px;
+  
+}
+
+#hero-img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-msg {
+  position: absolute;
+  top:325px;
+	right: 75px;
+	background: radial-gradient(#fff, #c8d5b9);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: .5rem;
+	box-shadow: 0 0 1rem #fff;
+	opacity: 0.75;
+}
+
+.hero-msg h2 {
+  font-family: "Crimson Text", Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+
+
 .card {
   grid-column: 1 /3;
   border-radius: 0.2rem;
@@ -136,3 +177,18 @@ footer {
 #menu.show::before {
   content: "X";
 }
+
+.dark {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+}
+
+.dark h3 {
+  color: black;
+
+}
+
+.dark footer {
+  color: black;
+}
+  
