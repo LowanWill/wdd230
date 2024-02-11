@@ -71,7 +71,7 @@ nav {
 }
 
 main {
-  max-width: 500px;
+  width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -189,6 +189,10 @@ footer {
 }
 
 .dark footer {
+  color: black;
+}
+
+.dark .hero-msg h2{
   color: black;
 }
   
