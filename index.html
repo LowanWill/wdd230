@@ -8,7 +8,7 @@
     <meta name="author" content="Lowry Williams">
     <meta property="og:title" content="Lowry Williams - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lowanwill.github.io/wdd230/images/utah.png">
+    <meta property="og:image" content="https://lowanwill.github.io/wdd230/images/utah.webp">
     <meta property="og:url" content="https://lowanwill.github.io/wdd230/">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -18,7 +18,7 @@
 
   <body>
     <header>
-      <img src="images/profile.png" alt="Profile photo of Lowry Williams">
+      <img src="images/profile.webp" alt="Profile photo of Lowry Williams">
       <h1>Lowry Williams</h1>
     </header>
     <a id="menu" href="#"></a>
@@ -33,6 +33,15 @@
       </ul>
     </nav>
     <main>
+      <div class="hero">
+        <picture>
+          <source media="(max-width:400px)" srcset="images/orlando-small.webp">
+          <img src="images/orlando.webp" alt="Photo of Orlando temple" width="960" height="600">
+        </picture>
+        <div class="herolabel">
+          <p>Orlando Temple</p>
+        </div>
+      </div>
       <h2>WDD 230: Web Frontend Development</h2>
       <section class="card">
         <h3>Learning Activities</h3>
