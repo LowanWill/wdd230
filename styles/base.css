@@ -129,6 +129,12 @@ main h2 {
   text-align: center;
 }
 
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
 iframe {
   width: 80%;
   margin: 0 auto;
