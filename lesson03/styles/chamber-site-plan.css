@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato&display=swap");
+
+/*font-family: "Crimson Text", serif; paragraphs*/
+/*font-family: "Lato", sans-serif; headings*/
+/* colors: F2E8CF-light tan- text boxes/accent color
+           6A994E- ligher moss green-accent color/borders
+           386641- darker green-- background header
+           BC4749- red accent color
+*/
+
+header {
+  padding: 2rem;
+  background-color: #386641;
+  display: block;
+}
+
+h1 {
+  color: black;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  color:#F2E8CF;
+}
+
+h2,
+h3 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h2 + p {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Crimson Text", serif;
+}
+
+h3 + p::first-letter {
+  color: #386641;
+  font-size: 200%;
+}
+h3 + p {
+  background-color: #F2E8CF;
+}
+
+li {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Crimson Text", serif;
+  list-style: none;
+}
+
+main {
+  width: 900px;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#p1 {
+  font-size: 2rem;
+  color: #BC4749;
+
+  font-family: "Lato", sans-serif;
+  text-decoration: underline;
+}
+
+#p2 {
+  font-size: 2rem;
+  color: #BC4749;
+  font-family: "Crimson Text", serif;
+  text-decoration: underline;
+}
