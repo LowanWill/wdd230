@@ -1,0 +1,24 @@
+@media screen and (min-width: 600px) {
+    .navigation {
+      flex-flow: row;
+    }
+    nav ul li {
+      flex: 1 1 auto;
+    }
+    .card {
+      grid-column: span 1;
+    }
+    .navigation {
+      display: flex;
+    }
+    .navigation li {
+      display: block; /* change state in small view */
+      flex: 1 1 100%;
+    }
+    .navigation a {
+      text-align: center;
+    }
+    #menu {
+      display: none;
+    }
+  }
