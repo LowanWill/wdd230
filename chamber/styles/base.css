@@ -23,6 +23,7 @@ header {
 h1 {
     font-family: "Lato";
     font-size: 3.5rem;
+    color: var(--lightest-color);
 }
 
 #menu {
@@ -41,6 +42,12 @@ h1 {
 nav {
     background-color: var(--lightest-color);
 }
+
+a:visited {
+    color: black;
+}
+
+
   
 .navigation a:hover,
 .navigation a:active {
