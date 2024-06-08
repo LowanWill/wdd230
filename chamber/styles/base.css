@@ -199,6 +199,48 @@ footer {
     color: black;
 }
 
+.discover-main div {
+	padding: 1rem;
+	margin: 1rem;
+}
+.discover-cards  div {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 1rem;
+	padding: 1rem;
+	
+}
+.discover-gallery {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.discover-gallery p{
+	font-size: 1.2rem;
+}
+.discover-gallery img{
+	object-fit: cover;
+    width: 100%;	
+	overflow: auto;	
+}
+
+.discover-cards p{
+	padding: 1rem;
+	text-align: left;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid section >* {
+	margin: 0.1rem;
+}
+
 
 
   
