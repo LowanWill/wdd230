@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Site - Lowry Williams - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="Chamber of Commerce Site Assignment belonging to Lowry Williams for WDD 230 - Web Frontend Development">
+    <meta name="author" content="Lowry Williams">
+    <meta property="og:title"
+        content="Chamber of Commerce Assignment Site for Lowry Williams - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lowanwill.github.io/wdd230/chamber/images/eagle-mountain.png">
+    <meta property="og:url" content="https://lowanwill.github.io/wdd230/chamber">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Eagle Mountain Chamber of Commerce</h1>
+        <div id="mode">
+            🌜
+        </div>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <picture>
+            <source media="(max-width:403px)" srcset="images/eagle-mountain-small.webp">
+            <source media="(max-width:807px)" srcset="images/eagle-mountain-medium.webp">
+            <img src="images/eagle-mountain.webp" alt="View of Eagle Mountain Area" width="600" height="400">
+        </picture>
+        <div class="herolabel">
+            <p>JOIN NOW</p>
+        </div>
+    </div>
+
+    <main class="discover-main">
+        <div class="grid">
+            <section class="discover-cards">
+                <div class="visits">
+                    <h2>Visits</h2>
+                    <p><span class="label">Welcome!<br><br></span><span id="visitsDates"></span><br>Total number of
+                        visits:
+                        <span id="visits"></span>
+                    </p>
+                </div>
+                <div class="events">
+                    <h2> Events</h2>
+                    <p> • Summer is here! Enjoy our Farmer's Market at Cory B. Wride Park, every Saturday June through
+                        September, 9:00am-1:00pm<br>
+                        <br>
+                        • Planning Commision Meeting: City Hall, June 11, 5:30pm-9:00pm<br>
+                        <br>
+                        • Movie in the Park: Silverlake Amphitheater, June 14, 9:30pm-12:00am<br>
+                        <br>
+                        • City Council Meeting: City Hall, June 18, 4:00pm-9:00pm<br>
+                        <br>
+                        • Teen Technablast: Cory B. Wride Park, June 22nd 4:00pm-9:30pm<br>
+                    </p>
+                </div>
+                <div class="demographics">
+                    <h2>Demographics</h2>
+                    <p> • Total Population: 57,129<br>
+                        <br>
+                        • Median Household Income: $122,720<br>
+                        <br>
+                        • Median Home Value: $463,058<br>
+                        <br>
+                        • Labor force education level: 95% High School Diploma, 30% Bachelor's Degree or higher
+                    </p>
+                </div>
+            </section>
+            <section class="discovery-gallery">
+                <div>
+                    <h2>Discover Eagle Mountain</h2>
+                    <picture>
+                        <source media="(max-width:400px)" scrset="images/data center-small.webp">
+                        <source media="(max-width: 960px)" srcset="images/data center-medium.webp">
+                        <img src="images/data center.webp#" alt="Data Center" width="600" height="400" loading="lazy">
+                    </picture>
+                    <p class="img-caption">Data Center caption here</p>
+                </div>
+                <div>
+                    <picture>
+                        <source media="(max-width:400px)" scrset="images/park-small.webp">
+                        <source media="(max-width: 960px)" srcset="images/park-medium.webp">
+                        <img src="images/park.webp" alt="Corey Wride Park" width="600" height="400" loading="lazy">
+                    </picture>
+                    <p class="img-caption">Corey Wride Park caption here</p>
+                </div>
+                <div>
+                    <picture>
+                        <source media="(max-width:400px)" scrset="images/ranches-golf-small.webp">
+                        <source media="(max-width: 960px)" srcset="images/ranches-golf-medium.webp">
+                        <img src="images/ranches-golf.webp" alt="#" width="600" height="400" loading="lazy">
+                    </picture>
+                    <p class="img-caption">Ranches Golf caption here</p>
+                </div>
+                <div>
+                    <picture>
+                        <source media="(max-width:400px)" scrset="images/walking-trails-small.webp">
+                        <source media="(max-width: 960px)" srcset="images/walking-trails-medium.webp">
+                        <img src="images/walking-trails.webp" alt="Walking Trails" width="600" height="400"
+                            loading="lazy">
+                    </picture>
+                    <p class="img-caption">Trails caption here</p>
+                </div>
+                <div>
+                    <picture>
+                        <source media="(max-width:400px)" scrset="images/pony-express-small.webp">
+                        <source media="(max-width: 960px)" srcset="images/pony-express-medium.webp">
+                        <img src="images/pony-express.webp" alt="Pony Express Trail Marker" width="600" height="400"
+                            loading="lazy">
+                    </picture>
+                    <p class="img-caption">Pony Express caption here</p>
+                </div>
+                <div>
+                    <picture>
+                        <source media="(max-width:400px)" scrset="images/petroglyphs-small.webp">
+                        <source media="(max-width: 960px)" srcset="images/petroglyphs-medium.webp">
+                        <img src="images/petroglyphs.webp" alt="Petroglyphs" width="600" height="400" loading="lazy">
+                    </picture>
+                    <p class="img-caption">Petroglyphs caption here</p>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+    <footer>
+        <h3>Eagle Mountain Chamber of Commerce</h3>
+        <h4>Phone</h4>
+        <h4>Address</h4>
+        <h4><span id="copyright"></span>Chamber of Commerce</h4>
+        <h4> Lowry Williams | WDD 230 Project | </h4>
+        <span id="lastModified"></span>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/visits.js"></script>
+</body>
+
+</html>
