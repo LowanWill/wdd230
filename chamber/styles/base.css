@@ -83,8 +83,6 @@ main {
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
     gap: 2rem;
     padding: 2rem;
     background-color: white;
@@ -224,6 +222,7 @@ footer {
 .discover-cards p{
 	padding: 1rem;
 	text-align: left;
+
 }
 
 .grid {
@@ -240,6 +239,7 @@ footer {
 .grid section >* {
 	margin: 0.1rem;
 }
+
 
 
 
