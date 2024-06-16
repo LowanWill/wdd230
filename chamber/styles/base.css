@@ -193,9 +193,11 @@ footer {
   
 }
   
-  .dark footer {
+.dark footer {
     color: black;
 }
+
+
 
 .discover-main div {
 	padding: 1rem;
@@ -239,6 +241,99 @@ footer {
 .grid section >* {
 	margin: 0.1rem;
 }
+/*Join*/
+.join {
+    padding: 1.5rem;
+    font-family: "Crimson Text";
+    margin-bottom: 0;
+}
+
+.join-form fieldset {
+    margin: 1rem 0;
+    border: 2px solid var(--primary-color);
+    padding: 2rem;
+}
+
+.join-form legend {
+    color:var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "Crimson Text";
+    text-align: center;
+    padding: .5rem;
+}
+
+.join-form label {
+    display:block;
+    padding-top:1rem;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"] {
+    display:block;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    
+}
+
+.join-form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#A7C957, #386641);
+    color: black;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 95%;
+    max-width: 400px;
+    margin: .5rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+  }
+
+.radio {
+    margin-bottom: 20px;
+}  
+
+textarea {
+    width: 300px;
+}
+
+
+.level{
+    box-shadow: 0 4px 8px 0 rgba(8, 44, 8, 0.2);
+    border: 1px solid var(--primary-color);
+    padding: 4rem;
+    width: auto;
+    margin-top: 2rem;
+    
+}
+.level h2 {
+    background-color: var(--primary-color);
+    color: var(--lightest-color);
+}
+
+.level p {
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.price {
+    font-weight: bold;
+    font-family: "Crimson Text";
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.dark .label {
+    color: var(--dark-text-color);
+}
+
+.dark .legend {
+    color: var(--dark-text-color);
+}
+
 
 
 

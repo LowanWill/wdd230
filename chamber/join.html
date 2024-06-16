@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Site - Lowry Williams - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="Chamber of Commerce Site Assignment belonging to Lowry Williams for WDD 230 - Web Frontend Development">
+    <meta name="author" content="Lowry Williams">
+    <meta property="og:title"
+        content="Chamber of Commerce Assignment Site for Lowry Williams - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lowanwill.github.io/wdd230/chamber/images/eagle-mountain.png">
+    <meta property="og:url" content="https://lowanwill.github.io/wdd230/chamber">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Eagle Mountain Chamber of Commerce</h1>
+        <div id="mode">
+            🌜
+        </div>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <picture>
+            <source media="(max-width:403px)" srcset="images/eagle-mountain-small.webp">
+            <source media="(max-width:807px)" srcset="images/eagle-mountain-medium.webp">
+            <img src="images/eagle-mountain.webp" alt="View of Eagle Mountain Area" width="900" height="600">
+        </picture>
+        <div class="herolabel">
+            <p>JOIN NOW</p>
+        </div>
+    </div>
+
+    <main class="join">
+        <div class="grid">
+            <form method="get" action="thankyou.html" class="join-form">
+                <fieldset>
+                    <legend>Join the Chamber of Commerce</legend>
+                    <label>First Name:* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name:* <input type="text" name="lname" id="lname" required></label>
+                    <label>Title or Position:* <input type="text" name="position" id="position"
+                            pattern="[A-Za-z0-9- ]{7}" required></label>
+                    <label>Email:* <input type="email" name="email" id="email" placeholder="example@gmail.com"
+                            required></label>
+                    <label>Mobile Phone:* <input type="tel" name="tel" id="tel" required></label>
+                    <label>Organization/Business Name:* <input type="text" name="bname" id="bname" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose a Membership Level</legend>
+                    <div class="radio">
+                        <label> <input type="radio" name="levels" value="np"> NP Membership</label>
+                        <label> <input type="radio" name="levels" value="bronze"> Bronze Membership</label>
+                        <label> <input type="radio" name="levels" value="silver"> Silver Membership</label>
+                        <label> <input type="radio" name="levels" value="gold"> Gold Membership</label>
+                    </div>
+                    <div class="'textarea">
+                        <label>Tell Us About Your Business</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                    <input type="hidden" name="date" id="date">
+                </fieldset>
+                <input type="submit" value="Join Chamber">
+
+            </form>
+            <section id="alllevels">
+                <div class="level">
+                    <h2>NP Membership</h2>
+                    <p>This membership level is reserved for non-profit organizations serving our community.<br>
+                        Benefits: <br></p>
+                    <p>• Access to networking events<br>
+                        • Listing in our directory under the Non-profits section<br>
+                        • Receive our quarterly newsletter<br>
+                        • No membership fee<br>
+                    </p>
+                    <span class="price">Membership Price: Free</span>
+                </div>
+                <div class="level">
+                    <h2>Bronze Membership</h2>
+                    <p>This membership level is perfect for small businesses.<br>
+                        Benefits: <br></p>
+                    <p>• <br>
+                        • <br>
+                        • <br>
+                        • <br>
+                    </p>
+                    <span class="price">Membership Price: $400/year</span>
+                </div>
+                <div class="level">
+                    <h2>Silver Membership</h2>
+                    <p>This membership level is perfect for small businesses.<br>
+                        Benefits: <br></p>
+                    <p>• <br>
+                        • <br>
+                        • <br>
+                        • <br>
+                    </p>
+                    <span class="price">Membership Price: $800/year</span>
+                </div>
+                <div class="level">
+                    <h2>Gold Membership</h2>
+                    <p>This membership level is perfect for small businesses.<br>
+                        Benefits: <br></p>
+                    <p>• <br>
+                        • <br>
+                        • <br>
+                        • <br>
+                    </p>
+                    <span class="price">Membership Price: $1200/year</span>
+                </div>
+
+            </section>
+        </div>
+
+
+    </main>
+    <footer>
+        <h3>Eagle Mountain Chamber of Commerce</h3>
+        <h4>Phone</h4>
+        <h4>Address</h4>
+        <h4><span id="copyright"></span>Chamber of Commerce</h4>
+        <h4> Lowry Williams | WDD 230 Project | </h4>
+        <span id="lastModified"></span>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
