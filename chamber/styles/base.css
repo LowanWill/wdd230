@@ -326,6 +326,18 @@ textarea {
     font-size: 1.2rem;
 }
 
+.join-form input:required {
+    border-left: 4px solid darkred;
+}
+
+.join-form input:required:valid {
+    border-left: 4px solid green;
+}
+
+.thankyou h2 {
+    color: var(--primary-color);
+    
+}
 .dark .label {
     color: var(--dark-text-color);
 }
