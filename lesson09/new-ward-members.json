@@ -1,0 +1,35 @@
+{
+    "newMembers": {
+        "lastName": "Jones",
+        "movedIn": "2024-06-17",
+        "numberOfMembers": 5,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Ray Jones",
+                "gender": "male",
+                "birthday": "1986-06-30"
+            },
+            {
+                "name": "Mary Jones",
+                "gender": "female",
+                "birthday": "1987-11-20"
+            },
+            {
+                "name": "Scott Jones",
+                "gender": "male",
+                "birthday": "2009-06-30"
+            },
+            {
+                "name": "Christopher Jones",
+                "gender": "male",
+                "birthday": "2011-12-09"
+            },
+            {
+                "name": "Cynthia Jones",
+                "gender": "female",
+                "birthday": "2014-02-10"
+            }
+        ]
+    }
+}
