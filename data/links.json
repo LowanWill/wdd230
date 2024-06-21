@@ -5,7 +5,7 @@
             "links": [
                 {
                     "url": "lesson01/holygrail.html",
-                    "title": "Holy Layout |"
+                    "title": "Holy Layout"
                 },
                 {
                     "url": "https://codepen.io/LowanWil/pen/RwdoEWY",
@@ -18,11 +18,11 @@
             "links": [
                 {
                     "url": "lesson02/design.html",
-                    "title": "Web Design Principles |"
+                    "title": "Web Design Principles"
                 },
                 {
                     "url": "lesson02/media-query.html",
-                    "title": "Media Queries |"
+                    "title": "Media Queries"
                 },
                 {
                     "url": "lesson02/design-principles.html",
@@ -35,11 +35,11 @@
             "links": [
                 {
                     "url": "lesson03/images/css-combinators.png",
-                    "title": "CSS Combinators Exercise |"
+                    "title": "CSS Combinators Exercise"
                 },
                 {
                     "url": "https://codepen.io/LowanWil/pen/oNRNEQQ",
-                    "title": "CSS Pseudo-elements |"
+                    "title": "CSS Pseudo-elements"
                 },
                 {
                     "url": "https://codepen.io/LowanWil/pen/gOJOvVb",
@@ -79,7 +79,7 @@
             "links": [
                 {
                     "url": "lesson07/lazyload.html",
-                    "title": "Lazy Load Demo |"
+                    "title": "Lazy Load Demo"
                 },
                 {
                     "url": "lesson07/bom.html",
@@ -92,7 +92,7 @@
             "links": [
                 {
                     "url": "lesson08/tablebuild.html",
-                    "title": "HTML Tables for Data Presentation |"
+                    "title": "HTML Tables for Data Presentation"
                 },
                 {
                     "url": "lesson08/index.html",
@@ -105,7 +105,7 @@
             "links": [
                 {
                     "url": "lesson09/new-ward-members.json",
-                    "title": "JSON |"
+                    "title": "JSON"
                 },
                 {
                     "url": "lesson09/prophets.html",
