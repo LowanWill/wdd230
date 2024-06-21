@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato&display=swap");
+
+body {
+    font-family: "Crimson Text";
+
+}
+
+#cards  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+}
+
+h1 {
+    font-family:"Lato";
+    background-color:#023047;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0.5em;
+    font-size: 1em;
+}
+
+section {
+    margin: 0.25rem;
+    padding: 0.25rem;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#8ecAe6; 
+    border: 1px solid #bbb;
+}
+
+img {
+    width: auto;
+      max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+}
+
+footer {
+    background-color: #023047;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+
+}
+  

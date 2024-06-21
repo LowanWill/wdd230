@@ -1,0 +1,28 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Layout"
+                },
+                {
+                    "url": "https://codepen.io/LowanWil/pen/RwdoEWY",
+                    "title": "CodePen"
+                }
+            ],
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Web Design Principles"
+                },
+                {
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Queries"
+                }
+            ]
+        }
+    ]
+}
