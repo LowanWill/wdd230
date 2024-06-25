@@ -1,5 +1,5 @@
 const baseURL = "https://lowannwil.github.io/wdd230/";
-const dataURL = "https://lowannwil.github.io/wdd230/chamber/dada/members.json";
+const dataURL = "https://lowannwil.github.io/wdd230/chamber/data/members.json";
 
 async function getMembers() {
 
