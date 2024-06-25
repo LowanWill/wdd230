@@ -47,7 +47,7 @@ const displayMembers = (members) => {
         address.textContent = `${member.address}`;
         phone.textContent = `${member.phone}`;
         level.textContent = `Membership level: ${member.memberlevel}`;
-        category.textContent = `Business category: ${member.businesscategory}`;
+        category.textContent = `${member.businesscategory}`;
         url.textContent = `${member.url}`;
         url.setAttribute("href", member.url);
         url.setAttribute("target", "_blank");
