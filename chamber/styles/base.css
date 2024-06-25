@@ -350,7 +350,8 @@ textarea {
 
 #directory {
     margin: 2rem;
-    padding: .5rem;
+    position: relative;
+    padding: 20px;
     
 }
 
@@ -371,7 +372,7 @@ textarea {
 
 .buttons {
     text-align: center;
-    padding: .05rem;
+    padding: .5rem;
 }
 
 .buttons button{
@@ -391,7 +392,9 @@ textarea {
     align-items: center;
     margin: .25rem;
     padding: .35rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     color: var(--primary-color);
+    
 
 }
 
@@ -444,7 +447,7 @@ textarea {
 .list section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "name phone" 
+    grid-template-areas: "logo name phone" 
                           "address  url";
     margin: 0;
     height: auto;
@@ -453,6 +456,10 @@ textarea {
 
 .list section > * {
     margin: 0 1rem;
+}
+
+.list section img{
+    display: none;
 }
 
 .list section h3 {

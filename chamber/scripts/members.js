@@ -3,10 +3,24 @@ const dataURL = "https://lowanwill.github.io/wdd230/chamber/data/members.json";
 
 async function getMembers() {
 
-    const response = await fetch(dataURL);
-    const data = await response.json();
+    /* const response = await fetch(dataURL);
+     const  = await response.json();
+ 
+     displayMembers(data.members);*/
 
-    displayMembers(data.members);
+    try {
+        const response = await fetch(dataURL);
+        if (!response.ok) {
+            throw new Error("Failed to fetch data");
+        }
+        const data = await response.json();
+        // console.log(data);
+        displayMembers(data.members);
+        return data;
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        throw error;
+    }
 }
 
 getMembers();
@@ -16,7 +30,7 @@ const displayMembers = (members) => {
     const cards = document.querySelector("#members");
 
     members.forEach((member) => {
-        const card = document.createElement("section");
+        const bCard = document.createElement("section");
         const logo = document.createElement("img");
         const name = document.createElement("h3");
         const address = document.createElement("p");
@@ -25,7 +39,7 @@ const displayMembers = (members) => {
         const category = document.createElement("p");
         const url = document.createElement("a");
 
-        card.setAttribute("class", "member");
+        bCard.setAttribute("class", "member");
         logo.setAttribute("src", member.image);
         logo.setAttribute("alt", `logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy')
@@ -39,15 +53,15 @@ const displayMembers = (members) => {
         url.setAttribute("target", "_blank");
 
 
-        card.appendChild(logo);
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appemdChild(level);
-        card.appendChild(category);
-        card.appendChild(url);
+        bCard.appendChild(logo);
+        bCard.appendChild(name);
+        bCard.appendChild(address);
+        bCard.appendChild(phone);
+        bCard.appendChild(level);
+        bCard.appendChild(category);
+        bCard.appendChild(url);
 
-        cards.appendChild(card);
+        cards.appendChild(bCard);
 
 
 
@@ -59,7 +73,7 @@ const displayMembers = (members) => {
 
 const gridButton = document.querySelector("#gridbutton");
 const listButton = document.querySelector("#listbutton");
-const display = documentquerySelector("article");
+const display = document.querySelector("article");
 
 
 gridButton.addEventListener("click", () => {
