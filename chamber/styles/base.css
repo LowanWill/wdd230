@@ -347,27 +347,31 @@ textarea {
 }
 
 /* Directory*/
-.chamberMembers{
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(320px, 1fr));
-}
+
 #directory {
-    font-size: 2em;
-    color:var(--primary-color);
-    font-family: "Lato";
-    Text-align: center;
-    padding-bottom: .5rem;
-    justify-content: center;
+    margin: 2rem;
+    padding: .5rem;
+    
 }
 
-#gridbutton, #listbutton {
+#directory h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Lato";
+    color: var(--primary-color);
+}
+
+
+
+/*#gridbutton, #listbutton {
     display: inline-block;
     margin-inline: .5rem;
     justify-content: center;
-}
+}*/
 
 .buttons {
     text-align: center;
+    padding: .05rem;
 }
 
 .buttons button{
@@ -377,30 +381,106 @@ textarea {
     font-weight: bold;
     border-radius: 0;
     border: 1px solid var(--primary-color);
-}
-
-.member ul {
-    list-style: none;
-    text-align: left;
-    padding-top: 20px;
-
+    cursor: pointer;
 }
 
 .member {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin: .25rem;
+    padding: .35rem;
+    color: var(--primary-color);
+
+}
+
+.member.dark-mode {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+
+}
+.member h3 {
+    font-size: 1.2rem;
+
+}
+
+.member p{
+    font-size: .75rem;
+}
+
+.member a {
+    font-size: .75rem;
+    color: var(--primary-color);
+
+}
+
+.member a.darkmode {
+    color: var(--dark-text-color);
 
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
     align-items: center;
+
 }
 
+.grid section {
+    text-align: center;
+}
+.grid section > * {
+    margin: .1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name phone" 
+                          "address  url";
+    margin: 0;
+    height: auto;
+
+}
+
+.list section > * {
+    margin: 0 1rem;
+}
+
+.list section h3 {
+    font-size: .75rem;
+    grid-area: name;
+
+}
+
+.list section p:nth-of-type(1) {
+    grid-area: address;
+}
+.list section p:nth-of-type(2) {
+    grid-area: phone;
+}
+.list section a{
+    grid-area:url;
+
+}
+.list section:nth-child(even) {
+    background-color: #e5e6e7;
+}
+.list section:nth-child(even).dark-mode {
+    color: black;
+}
+.list section:nth-child(even) a.dark-mode {
+    background-color: #e5e6e7;
+    color: black;
+}
 
 
 

@@ -6,51 +6,48 @@ async function getMembers() {
     const response = await fetch(dataURL);
     const data = await response.json();
 
-    displayMembers(data.chamberMembers);
+    displayMembers(data.members);
 }
 
+getMembers();
 
+const displayMembers = (members) => {
 
-const displayMembers = (chamberMembers) => {
-    chamberMembers.forEach(chamberMember => {
-        let card = document.createElement('section');
-        let logo = document.createElement("img");
-        let brand = document.createElement("h3");
-        let list = document.createElement("ul");
-        let listItem1 = document.createElement("li");
-        let listItem2 = document.createElement("li");
-        let listItem3 = document.createElement("li");
-        let listItem4 = document.createElement("li");
-        let url = document.createElement("a");
+    const cards = document.querySelector("#members");
+
+    members.forEach((member) => {
+        const card = document.createElement('section');
+        const logo = document.createElement("img");
+        const name = document.createElement("h3");
+        const address = document.createElement("p");
+        const phone = document.createElement("p");
+        const level = document.createElement("p");
+        const category = document.createElement("p");
+        const url = document.createElement("a");
 
         card.setAttribute("class", "member");
-        logo.setAttribute("src", chamberMember.image);
-        logo.setAttribute("alt", `logo of ${chamberMember.name}`);
-        logo.setAttribute('class', 'member-logo')
+        logo.setAttribute("src", member.image);
+        logo.setAttribute("alt", `logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy')
-        brand.textContent = `${chamberMember.name}`;
-        brand.setAttribute("class", "brand");
-        list.setAttribute("class", "info");
-        listItem1.textContent = `${chamberMember.address}`;
-        listItem2.textContent = `${chamberMember.phone}`;
-        listItem3.textContent = `Membership level: ${chamberMember.memberlevel}`;
-        listItem4.textContent = `Business category: ${chamberMember.businesscategory}`;
-        url.textContent = `${chamberMember.url}`;
-        url.setAttribute("href", chamberMember.url);
+        name.textContent = `${member.name}`;
+        address.textContent = `${member.address}`;
+        phone.textContent = `${member.phone}`;
+        level.textContent = `Membership level: ${member.memberlevel}`;
+        category.textContent = `Business category: ${member.businesscategory}`;
+        url.textContent = `${member.url}`;
+        url.setAttribute("href", member.url);
         url.setAttribute("target", "_blank");
-        url.setAttribute("class", "website");
+
 
         card.appendChild(logo);
-        card.appendChild(brand);
-        card.appendChild(list);
-        list.appendChild(list);
-        list.appendChild(listItem1);
-        list.appendChild(listItem2);
-        list.appemdChild(listItem3);
-        list.appendChild(listItem4);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appemdChild(level);
+        card.appendChild(category);
         card.appendChild(url);
 
-        chamberMembers.appendChild(card);
+        cards.appendChild(card);
 
 
 
@@ -58,25 +55,25 @@ const displayMembers = (chamberMembers) => {
     })
 }
 
-getMembers();
 
-document.addEventListener("DOMContentLoaded", function () {
-    const gridButton = document.querySelector("#gridbutton");
-    const listButton = document.querySelector("#listbutton");
-    const display = documentquerySelector("#members");
 
-    function showGrid() {
-        display.classList.add("grid");
-        display.classList.remove("list");
+const gridButton = document.querySelector("#gridbutton");
+const listButton = document.querySelector("#listbutton");
+const display = documentquerySelector("#members");
 
-    }
 
-    function showList() {
-        display.classList.add("list");
-        display.classList.remove("grid");
-    }
-    gridButton.addEventListener("click", showGrid);
-    listButton.addEventListener("click", showList);
+gridButton.addEventListener("click", () => {
+    display.classList.add("grid");
+    display.classList, remove("list");
 
-    showGrid();
 });
+
+
+listButton.addEventListener("click", () => {
+    display.classList.add("list");
+    display.classList.remove("grid");
+});
+
+
+
+
