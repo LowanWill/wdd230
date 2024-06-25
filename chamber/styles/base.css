@@ -346,6 +346,57 @@ textarea {
     color: var(--dark-text-color);
 }
 
+/* Directory*/
+.chamberMembers{
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(320px, 1fr));
+}
+#directory {
+    font-size: 2em;
+    color:var(--primary-color);
+    font-family: "Lato";
+    Text-align: center;
+    padding-bottom: .5rem;
+    justify-content: center;
+}
+
+#gridbutton, #listbutton {
+    display: inline-block;
+    margin-inline: .5rem;
+    justify-content: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons button{
+    padding: .5rem;
+    background-color: var(--lightest-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 0;
+    border: 1px solid var(--primary-color);
+}
+
+.member ul {
+    list-style: none;
+    text-align: left;
+    padding-top: 20px;
+
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    align-items: center;
+}
 
 
 
