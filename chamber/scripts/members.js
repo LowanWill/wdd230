@@ -1,5 +1,5 @@
-const baseURL = "https://lowannwil.github.io/wdd230/";
-const dataURL = "https://lowannwil.github.io/wdd230/chamber/data/members.json";
+const baseURL = "https://lowanwill.github.io/wdd230/";
+const dataURL = "https://lowanwill.github.io/wdd230/chamber/data/members.json";
 
 async function getMembers() {
 
@@ -16,7 +16,7 @@ const displayMembers = (members) => {
     const cards = document.querySelector("#members");
 
     members.forEach((member) => {
-        const card = document.createElement('section');
+        const card = document.createElement("section");
         const logo = document.createElement("img");
         const name = document.createElement("h3");
         const address = document.createElement("p");
@@ -59,7 +59,7 @@ const displayMembers = (members) => {
 
 const gridButton = document.querySelector("#gridbutton");
 const listButton = document.querySelector("#listbutton");
-const display = documentquerySelector("#members");
+const display = documentquerySelector("article");
 
 
 gridButton.addEventListener("click", () => {
