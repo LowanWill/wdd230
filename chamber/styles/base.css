@@ -420,6 +420,13 @@ textarea {
 
 }
 
+.member img {
+   height: 100 px;
+   max-width: 100%; 
+   
+   transform:scale(0.7);
+}
+
 .member a.darkmode {
     color: var(--dark-text-color);
 
