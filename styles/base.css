@@ -133,6 +133,12 @@ main h2 {
     list-style: none;
   }
 
+  .card p {
+    padding: .5rem;
+    text-align: center;
+
+  }
+
   .la-card {
     list-style-type: none;
     padding: 0;
