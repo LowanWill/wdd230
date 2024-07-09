@@ -46,20 +46,34 @@
             <p>JOIN NOW</p>
         </div>
     </div>
-
+    <div id="banner" class="popup">
+        <span classs="close-btn" id="closeBtn">&times;</span>
+        <p>Join us for a Chamber of Commerce Meet & Greet on Wednesday at 7:00p.m.</p>
+    </div>
     <main>
+
         <section class="card">
             <h3>Upcoming Events</h3>
             <ul>
-                <li>Event 1</li>
-                <li>Event 2</li>
+                <li>• Summer is here! Enjoy our Farmer's Market at Cory B. Wride Park, every Saturday June through
+                    September, 9:00am-1:00pm</li>
+                <li>• Planning Commision Meeting: City Hall, July 11, 5:30pm-9:00pm</li>
             </ul>
         </section>
         <section class="card">
             <h3>Weather</h3>
-            <p> Current Temperature: <span id="temperature">82</span>°F</p>
+            <div class="weather-info">
+                <div id="current-weather">
+                    <div id="container"></div>
+                    <p>Temperature: <span id="temp"></span></p>
+                    <p> Wind Speed: <span id="speed"></span></p>
+                    <p> Wind Chill: <span id="chill"></span></p>
+                </div>
+                <div id="forecast"></div>
+            </div>
+            <!--<p> Current Temperature: <span id="temperature">82</span>°F</p>
             <p> Wind speed: <span id="windSpeed">9</span>mph</p>
-            <p> Wind chill: <span id="windChill"></span></p>
+            <p> Wind chill: <span id="windChill"></span></p> -->
         </section>
         <section class="spotlight">
             <h3>Spotlight</h3>
@@ -70,6 +84,7 @@
         </section>
 
     </main>
+
     <footer>
         <h3>Eagle Mountain Chamber of Commerce</h3>
         <h4>Phone</h4>

@@ -78,7 +78,7 @@ const display = document.querySelector("article");
 
 gridButton.addEventListener("click", () => {
     display.classList.add("grid");
-    display.classList, remove("list");
+    display.classList.remove("list");
 
 });
 
