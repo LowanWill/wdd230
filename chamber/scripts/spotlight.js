@@ -38,7 +38,7 @@ const displaySpotlight = (members) => {
         logo.setAttribute('loading', 'lazy');
         brand.textContent = `${member.name}`;
         brand.setAttribute('class', 'brand');
-        url.textContent = `Website`;
+        url.textContent = `${member.url}`;
         url.setAttribute('href', member.website);
         url.setAttribute('target', '_blank');
         url.setAttribute('class', "website");
