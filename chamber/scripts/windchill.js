@@ -1,7 +1,7 @@
-const currentTemp = document.querySelector("#temp");
-const weatherIcon = document.querySelector("#weather-icon");
-const captionDesc = document.querySelector("figcaption");
-const wSpeed = document.querySelector("#speed");
+const currentTemp = document.querySelector('#temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+const wSpeed = document.querySelector('#speed');
 
 const currentUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=40.31&lon=-112.00&units=imperial&appid=ed0a9222e2c2ea5d4fdfefbe1e6305c0';
 
@@ -10,31 +10,31 @@ async function fetchCurrentWeather() {
         const response = await fetch(currentUrl);
         if (response.ok) {
             const data = await response.json();
-            //console.log(data);
+            //console.log(data); // Log the data to inspect its structure
             displayCurrentWeather(data);
 
         } else {
-            throw new Error("failed to fetch weather data");
+            throw new Error('Failed to fetch weather data');
         }
     } catch (error) {
-        console.log("Error fetching weather data:", error);
+        console.log('Error fetching weather data:', error);
     }
 }
 
 function displayCurrentWeather(data) {
     currentTemp.innerHTML = `${(data.main.temp.toFixed(1))}&degF`;
     wSpeed.innerHTML = `${data.wind.speed} mph`;
-    let figure = document.createElement("figure");
-    let icon = document.createElement("img");
-    let description = document.createElement("figcaption");
+    let figure = document.createElement('figure');
+    let icon = document.createElement('img');
+    let description = document.createElement('figcaption');
 
     icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-    icon.alt = `weather icon`;
+    icon.alt = `weather descriptive icon`;
     description.textContent = data.weather[0].description;
 
     figure.appendChild(icon);
     figure.appendChild(description);
-    document.getElementById("container").appendChild(figure);
+    document.getElementById('fig-container').appendChild(figure);
 
 }
 
@@ -45,20 +45,22 @@ async function fetchForecastWeather() {
         const response = await fetch(forecastUrl);
         if (response.ok) {
             const data = await response.json();
-            //console.log(data);
+            //console.log(data); // Log the data to inspect its structure
             displayForecastWeather(data);
-
         } else {
-            throw new Error("Failed to fetch weather data");
+            throw new Error('Failed to fetch weather data');
         }
     } catch (error) {
-        console.log("Error fetching weather data:", error);
+        console.log('Error fetching weather data:', error);
     }
 }
 
+// Function to format date to display only the day of the week
 const formatDayOfWeek = (date) => {
     return date.toLocaleDateString('en-US', { weekday: 'long' });
 };
+
+
 
 function displayForecastWeather(data) {
     try {
@@ -87,13 +89,17 @@ function displayForecastWeather(data) {
                         icon: entry.weather[0].icon, // Forecast weather icon code
                         description: entry.weather[0].description, // Forecast weather description
                         temp: entry.main.temp, // Forecast temperature
+                        humidity: entry.main.humidity // Forecast humidity
                     };
                 } else {
+                    // If an entry for this date already exists, update the temperature and humidity
                     forecastByDate[date].temp = entry.main.temp;
+                    forecastByDate[date].humidity = entry.main.humidity;
                 }
             }
         });
 
+        // Display forecast data on your website
         for (const date in forecastByDate) {
             // Create HTML elements dynamically to display forecast data
             const forecastElement = document.createElement('div');
@@ -109,30 +115,31 @@ function displayForecastWeather(data) {
             descriptionElement.textContent = forecastByDate[date].description;
             tempElement.textContent = `Temperature ${forecastByDate[date].temp}°F`;
 
+
             forecastElement.appendChild(dayElement);
             forecastElement.appendChild(iconElement);
             forecastElement.appendChild(descriptionElement);
             forecastElement.appendChild(tempElement);
 
+
             // Append the forecast element to a forecast section in your HTML document
-            document.getElementById('forecast').appendChild(forecastElement);
+            document.getElementById('forecast-section').appendChild(forecastElement);
         }
     } catch (error) {
         console.error('Error displaying forecast weather:', error);
     }
-
 }
 
 fetchForecastWeather();
 fetchCurrentWeather();
 
-function calculateWindChill(temperature, windSpeed) {
-    let temperature = parseFloat(document, getElementById("temp").textContent);
-    let windSpeed = parseFloat(document.getElementById("speed").textContent);
+function showWindChill() {
+    let temperature = parseFloat(document.getElementById("temp").textContent);
+    let windspeed = parseFloat(document.getElementById("speed").textContent);
     let windChillValue = "N/A";
 
-    if (temperature <= 50 && windSpeed > 3.0) {
-        windChillValue = calculateWindChill(temperature, windSpeed);
+    if (temperature <= 50 && windspeed > 3.0) {
+        windChillValue = calculateWindChill(temperature, windspeed);
     }
 
     document.getElementById("chill").textContent = windChillValue;
@@ -141,8 +148,7 @@ function calculateWindChill(temperature, windSpeed) {
 
 window.addEventListener("load", showWindChill);
 
-//const temperature = parseFloat(document.getElementById('temperature').value);
-//const windSpeed = parseFloat(document.getElementById('windSpeed').value);
+
 
 
 function calculateWindChill(temperature, windSpeed) {
