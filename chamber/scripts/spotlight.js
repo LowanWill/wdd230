@@ -12,7 +12,7 @@ async function fetchHighlight() {
 }
 
 function goldSilver(members) {
-    return members.filter(member => member.memberlevel === "Gold Member" || company.memberlevel === "Silver Member");
+    return members.filter(member => member.memberlevel === "Gold Member" || member.memberlevel === "Silver Member");
 
 }
 
