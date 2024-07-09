@@ -3,7 +3,7 @@ const dataURL = "https://lowanwill.github.io/wdd230/chamber/data/members.json";
 const highlight = document.querySelector("#spotlight");
 
 async function fetchHighlight() {
-    const response = await getch(dataURL);
+    const response = await fetch(dataURL);
     const data = await response.json();
     //console.log(data);
     const highlightCompanies = goldSilver(data.members);
