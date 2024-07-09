@@ -6,14 +6,13 @@ async function fetchHighlight() {
     const response = await fetch(dataURL);
     const data = await response.json();
     //console.log(data);
-    const highlightCompanies = goldSilver(data.members);
-    const selectedCompanies = selectRandomCompanies(goldSilver, 3);
+    const goldAndSilverCompanies = filterGoldAndSilver(data.members);
+    const selectedCompanies = selectRandomCompanies(goldAndSilverCompanies, 3);
     displaySpotlight(selectedCompanies);
 }
 
-function goldSilver(members) {
-    return members.filter(member => member.memberlevel === "Gold Member" || member.memberlevel === "Silver Member");
-
+function filterGoldAndSilver(members) {
+    return members.filter(member => member.membership_level === "Gold" || member.membership_level === "Silver");
 }
 
 function selectRandomCompanies(members, count) {
