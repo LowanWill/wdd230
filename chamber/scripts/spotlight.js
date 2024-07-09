@@ -3,12 +3,24 @@ const dataURL = "https://lowanwill.github.io/wdd230/chamber/data/members.json";
 const spotlights = document.querySelector("#spotlight");
 
 async function getSpotlight() {
-    const response = await fetch(dataURL);
-    const data = await response.json();
-    //console.log(data);
-    const goldAndSilverCompanies = filterGoldAndSilver(data.members);
-    const selectedCompanies = selectRandomCompanies(goldAndSilverCompanies, 3);
-    displaySpotlight(selectedCompanies);
+
+    try {
+        const response = await fetch(dataURL);
+        if (response.ok) {
+            const data = await response.json();
+            //console.log(data);
+            displaySpotlight(data.members);
+            return data;
+
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+
+
+
 }
 function displaySpotlight(members) {
     let topMembers = members.filter((member) => member.membership === "Silver Member" || member.membership === "Gold Member");
