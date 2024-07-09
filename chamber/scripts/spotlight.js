@@ -50,7 +50,7 @@ const displaySpotlight = (members) => {
 
 }
 
-fetchPartners();
+fetchHighlight();
 
 
 
