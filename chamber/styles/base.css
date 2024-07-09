@@ -117,15 +117,19 @@ main {
     font-family: "Crimson Text", Helvetica, sans-serif;
 }
 
-.popup {
+.popup-banner {
     display: none;
     position: fixed;
-    background-color:var(--secondary-accent);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+	background-color: var(--secondary-accent);
     padding: 20px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2em;
-
+    z-index: 1000;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	font-size: 2em;
 }
 
 .close-btn {

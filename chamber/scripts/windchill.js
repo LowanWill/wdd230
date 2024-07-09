@@ -38,7 +38,7 @@ function displayCurrentWeather(data) {
 
 }
 
-const forcastUrl = 'https://api.openweathermap.org/data/2.5/forcast?lat=40.31&lon=-112.00&units=imperial&appid=ed0a9222e2c2ea5d4fdfefbe1e6305c0';
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forcast?lat=40.31&lon=-112.00&units=imperial&appid=ed0a9222e2c2ea5d4fdfefbe1e6305c0';
 
 async function fetchForecastWeather() {
     try {

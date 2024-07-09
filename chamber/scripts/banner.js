@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const popupBanner = document.getElementById('banner');
+    const popupBanner = document.getElementById('popupBanner');
     const closeBtn = document.getElementById('closeBtn');
 
     // Show the popup banner only on Mondays, Tuesdays, and Wednesdays
