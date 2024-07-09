@@ -40,11 +40,11 @@ const displaySpotlight = (members) => {
         url.setAttribute('target', '_blank');
         url.setAttribute('class', "website");
 
-        member.appendChild(logo);
-        member.appendChild(brand);
-        member.appendChild(url);
+        company.appendChild(logo);
+        company.appendChild(brand);
+        company.appendChild(url);
 
-        partners.appendChild(company);
+        highlight.appendChild(company);
     });
 
 
