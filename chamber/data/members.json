@@ -6,7 +6,7 @@
             "phone": "801-555-5550",
             "url": "www.bytesdentistry.com",
             "image": "https://lowanwill.github.io/wdd230/chamber/images/business1.webp",
-            "memberlevel": "Bronze Member",
+            "memberlevel": "Silver Member",
             "businesscategory": "Business category: Healthcare"
         },
         {
@@ -24,7 +24,7 @@
             "phone": "801-555-5552",
             "url": "www.lakemtnadventures.com",
             "image": "https://lowanwill.github.io/wdd230/chamber/images/business3.webp",
-            "memberlevel": "Bronze Member",
+            "memberlevel": "Silver Member",
             "businesscategory": "Business category: Recreation"
         },
         {
@@ -42,7 +42,7 @@
             "phone": "801-555-5554",
             "url": "www.summittechsolutionsut.com",
             "image": "https://lowanwill.github.io/wdd230/chamber/images/business5.webp",
-            "memberlevel": "Bronze Member",
+            "memberlevel": "Gold Member",
             "businesscategory": "Business category: Technology and IT services"
         },
         {

@@ -154,6 +154,16 @@ main {
     padding: 1rem 2rem;
     list-style: none;
 }
+.card li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.card li p {
+    font-size: 1rem;
+    text-align: left;
+    color: black;
+}
 
 .card h3 {
     font-size: 1.5rem;
@@ -174,10 +184,10 @@ main {
 
 .forecast-day {
 	display: grid; 
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, .5fr);
     margin: 10px 0; 
 	border-top: 2px solid var(--secondary-color);
-	padding: 1rem 0;
+	
 }
 
 .spotlight {

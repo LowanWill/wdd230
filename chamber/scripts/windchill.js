@@ -94,7 +94,7 @@ function displayForecastWeather(data) {
                 } else {
                     // If an entry for this date already exists, update the temperature and humidity
                     forecastByDate[date].temp = entry.main.temp;
-                    forecastByDate[date].humidity = entry.main.humidity;
+
                 }
             }
         });
