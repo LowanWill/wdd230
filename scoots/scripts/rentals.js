@@ -10,7 +10,7 @@ async function getPricesData() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            //console.log(data);
+            console.log(data);
             displayPrices(data.rentals);
         } else {
             throw new Error("failed to fetch prices");
