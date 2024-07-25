@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots- Final Website Project for Lowry WIlliams for WDD230</title>
+    <meta name="description"
+        content="Scoots Final Website Project belonging to Lowry Williams for WDD 230 - Web Frontend Development">
+    <meta name="author" content="Lowry Williams">
+    <meta property="og:title"
+        content="Scoots Final Website Project belonging to Lowry Williams for WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lowanwill.github.io/wdd230/scoots/images/scoots-logo.webp">
+    <meta property="og:url" content="https://lowanwill.github.io/wdd230/scoots">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="banner">
+        <span class="close-btn" id="closeBtn">x</span>
+        <div id="max-temp"></div>
+    </div>
+    <header>
+        <img src="images/scoots-logo.webp" alt="scoots logo">
+        <div>
+            <h1>Scoots - Vacation Rentals</h1>
+            <h2>Scooters, Jeeps, and ATVs</h2>
+        </div>
+
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="rental">
+        <h2>Choose Your Adventure!</h2>
+        <div class="options">
+            <div class="rentals">
+                <img src="images/metro.webp" alt="Honda Metrpolitan Scooter" loading="lazy">
+                <p>Honda Metropolitan, 1 passenger</p>
+            </div>
+            <div class="rentals">
+                <img src="images/dio.webp" alt="Honda Dio Scooter" loading="lazy">
+                <p>Honda Dio 2, passengers</p>
+            </div>
+            <div class="rentals">
+                <img src="images/pcx150.webp" alt="Honda PCX 150 Scooter" loading="lazy">
+                <p>Honda PCX 150, 2 passengers</p>
+            </div>
+            <div class="rentals">
+                <img src="images/pioneer.webp" alt="Honda Pioneer ATV" loading="lazy">
+                <p>Honda Pioneer, 4 passengers</p>
+            </div>
+            <div class="rentals">
+                <img src="images/jeep4door.webp" alt="Jeep Wrangler 4 door" loading="lazy">
+                <p>Jeep Wrangler 4 door with a/c, 5 passengers</p>
+            </div>
+            <div class="rentals">
+                <img src="images/jeep2door.webp" alt="Jeep Wrangler 2 door" loading="lazy">
+                <p>Jeep Wrangler 2 door, 4 passengers</p>
+            </div>
+
+        </div>
+
+        <div class="table">
+            <h2>Rental Rates</h2>
+            <table id="prices">
+                <thead>
+                    <tr>
+                        <th colspan="6" scope="colgroup">Rental Pricing</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" scope="colgroup" class="empty"></td>
+                        <th colspan="2" scope="col">Reservations</th>
+                        <th colspan="2" scope="col">Walk-Ins</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Rental Type</th>
+                        <th scope="col">Max Passengers</th>
+                        <th scope="col">Half Day (3hrs)</th>
+                        <th scope="col">Full Day</th>
+                        <th scope="col">Half Day (3hrs)</th>
+                        <th scope="col">Full Day</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div>
+                <button onclick="window.location.href='reservations.html'">Reserve Now</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="scoots-footer">
+
+            <img src="images/scoots-logo.webp" alt="scoots logo">
+            <h3>Scoots - Vacation Rentals</h3>
+            <h4>Phone: 1-800-GoScoots</h4>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+            <p><span id="copyright"></span>Scoots - Vacation Rentals</p>
+        </div>
+        <div class="project">
+            <p> Lowry Williams | WDD 230 Project | </p>
+            <a href="attribution.html"> Attributions</a>
+            <span id="lastModified"></span>
+        </div>
+    </footer>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/rentals.js"></script>
+</body>

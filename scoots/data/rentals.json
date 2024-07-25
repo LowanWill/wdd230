@@ -1,0 +1,58 @@
+{
+    "rentals": [
+        {
+            "name": "Honda Metropolitan (49cc)",
+            "image": "https://lowanwill.github.io/wdd230/scoots/images/metro.webp",
+            "passengers": "1",
+            "reshalfday": "$20.00",
+            "resfullday": "$30.00",
+            "walkhalfday": "$25.00",
+            "walkfullday": "$35.00"
+        },
+        {
+            "name": "Honda Dio (110cc)",
+            "image": "https://lowanwill.github.io/wdd230/scoots/images/dio.webp",
+            "passengers": "2",
+            "reshalfday": "$30.00",
+            "resfullday": "$40.00",
+            "walkhalfday": "$35.00",
+            "walkfullday": "$45.00"
+        },
+        {
+            "name": "Honda PCX150 (149cc)",
+            "image": "https://lowanwill.github.io/wdd230/scoots/images/pcx150.webp",
+            "passengers": "2",
+            "reshalfday": "$40.00",
+            "resfullday": "$50.00",
+            "walkhalfday": "$45.00",
+            "walkfullday": "$55.00"
+        },
+        {
+            "name": "Honda Pioneer 1000",
+            "image": "https://lowanwill.github.io/wdd230/scoots/images/pioneer.webp",
+            "passengers": "4",
+            "reshalfday": "$50.00",
+            "resfullday": "$70.00",
+            "walkhalfday": "$60.00",
+            "walkfullday": "$80.00"
+        },
+        {
+            "name": "Jeep Wrangler 4 door with A/C",
+            "image": "https://lowanwill.github.io/wdd230/scoots/images/jeep4door.webp",
+            "passengers": "5",
+            "reshalfday": "$70.00",
+            "resfullday": "100.00",
+            "walkhalfday": "$85.00",
+            "walkfullday": "$125.00"
+        },
+        {
+            "name": "Jeep Wrangler 2 door open air",
+            "image": "https://lowanwill.github.io/wdd230/scoots/images/jeep2door.webp",
+            "passengers": "4",
+            "reshalfday": "$60.00",
+            "resfullday": "$85.00",
+            "walkhalfday": "$70.00",
+            "walkfullday": "$90.00"
+        }
+    ]
+}

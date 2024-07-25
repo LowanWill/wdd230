@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: #0cc0df;
+    --secondary-color: #1e385b;
+    --accent-color1: #bf372a;
+    --accent-color2: #de5341;
+    --accent-color3: #ff8548;
+    --lightest-color: #f1e6d6;
+}
+
+body {
+    margin:0;
+    padding: 0;
+}
+
+main {
+    margin: 0 auto;
+    background-color: var(--lightest-color)
+}
+
+#banner{
+    bottom: 0;
+    background-color: var(--accent-color1);
+    padding: 20px;
+    text-align: center;
+    color: var(--lightest-color);
+    font-family: "Merriweather Sans";
+    font-size: 1.5em;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color:var(--secondary-color);
+    color: var(--accent-color3);
+}
+
+header img {
+    max-width: 200px;
+    height: auto;
+    padding: .2rem;
+    margin: 0 25px 0;
+    border: 5px solid var(--accent-color3);
+}
+
+header h1 {
+    font-family: "Alegreya Sans SC";
+    font-size: 3em;
+}
+
+header h2 {
+    font-family: "Merriweather Sans";
+    
+    font-size: 2em;
+}
+
+.hero {
+    
+    width: 100%;
+    display: grid;
+    
+}
+
+.hero img {
+    
+    position: relative;
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.herolabel {
+    position: relative;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+}
+
+.herolabel h2 {
+    color: var(--lightest-color);
+    font-family: "Alegreya Sans SC";
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.herolabel p {
+    font-family: "Merriweather Sans";
+    color: var(--lightest-color);
+}
+
+.herolabel button {
+    padding: .5rem;
+    font-weight: 700;
+    font-size: 1.2em;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--accent-color3);
+}
+
+#menu {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--lightest-color);
+}
+  
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: var(--lightest-color);
+}
+
+a:visited {
+    color: black;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: black;
+    background-color: var(--secondary-color);
+}
+  
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    font-family: "Merriweather Sans";
+    font-size: 1.5rem;
+}
+
+.navigation li {
+    display: none;
+}
+  
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.show li {
+    display: block;
+}
+  
+#menu.show::before {
+    content: "X";
+}
+
+.business h2, h3, p {
+    color: var(--secondary-color);
+    
+}
+
+.business h2 {
+    font-family: "Alegreya Sans SC";
+    margin-left: 15px;
+}
+
+.business h3 {
+    font-family: "Merriweather Sans";
+    margin-left: 15px;
+}
+
+.vehicles img {
+    max-width: 200px;
+    border: 2px solid var(--accent-color2);
+    margin-left: 75px;
+}
+.adventure p{
+    font-family: "Merriweather Sans";
+
+
+}
+#weather, #forecast {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    display: flex;
+    flex-direction: row;  
+    gap: 0;
+    max-width: fit-content;
+    min-width: min-content;
+    padding: 0;
+    justify-content: left;   
+}
+
+#weather figcaption {
+    display: inline;
+    align-items: center;
+    color:var(--lightest-color);
+}
+
+#forecast figcaption {
+    display: inline;
+    align-items: center;
+    color:var(--lightest-color);
+}
+
+#weather img {
+    transform: scale(1.5);
+}
+
+#forecast img {
+    transform: scale(1.5);
+}
+
+#weather p{
+    display: inline;
+    font-family:"Merriweather Sans";
+    color: var(--lightest-color);
+    padding: 0;
+    margin: 1rem;
+}
+
+#forecast p{
+    display: inline;
+    font-family:"Merriweather Sans";
+    color: var(--lightest-color);
+    padding: 0;
+    margin: 1rem;
+}
+
+footer {
+   
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    padding: .8em;
+    margin-top: 10px;
+
+}
+
+footer img {
+    max-width: 100px;
+}
+
+/* Rentals*/
+
+.rental {
+    margin: 2.5rem;
+    padding: 1rem;
+    color: var(--secondary-color);
+}
+
+.rental h2 {
+    font-family: "Alegreya Sans SC";
+    font-size: 2em;
+}
+
+.rentals {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.rentals img {
+    max-width: 400px;
+    display: block;
+    border: 2px solid var(--accent-color1);
+}
+
+.rentals p {
+    font-family: "Merriweather Sans";
+    font-size: 1em;
+}
+
+table {
+    border: 1px solid var(--secondary-color);
+    font-size: .8em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1 px solid var(--secondary-color);
+    padding: 8px 10px;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+thead:first-child {
+    background-color: var(--lightest-color);
+    font-family: "Merriweather Sans";
+    font-size: 1em;
+}
+
+.table button {
+    display: block;
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: var(--secondary-color);
+    margin: 0 auto;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+

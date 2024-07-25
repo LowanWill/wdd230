@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots- Final Website Project for Lowry WIlliams for WDD230</title>
+    <meta name="description"
+        content="Scoots Final Website Project belonging to Lowry Williams for WDD 230 - Web Frontend Development">
+    <meta name="author" content="Lowry Williams">
+    <meta property="og:title"
+        content="Scoots Final Website Project belonging to Lowry Williams for WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lowanwill.github.io/wdd230/scoots/images/scoots-logo.webp">
+    <meta property="og:url" content="https://lowanwill.github.io/wdd230/scoots">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="banner">
+        <span class="close-btn" id="closeBtn">x</span>
+        <div id="max-temp"></div>
+    </div>
+    <header>
+        <img src="images/scoots-logo.webp" alt="scoots logo">
+        <div>
+            <h1>Scoots - Vacation Rentals</h1>
+            <h2>Scooters, Jeeps, and ATVs</h2>
+        </div>
+
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="home">
+        <div class="hero">
+            <picture>
+                <source media="(max-width:460px)" srcset="images/scooteronbeach-small.webp">
+                <source media="(max-width:800px)" srcset="images/scooteronbeach-medium.webp">
+                <img src="images/scooteronbeach-large.webp" alt="scooters on beach" loading="lazy">
+            </picture>
+        </div>
+        <div class="herolabel">
+            <h2>Come Explore our Island</h2>
+            <p>Go off the beaten path with our scooters, ATVs and Jeeps</p>
+            <button onclick="window.location.href='reservations.html'">Reserve Now</button>
+        </div>
+        <div class="business">
+            <div class="vehicles">
+                <h2>Explore Cozumel with Our Fun & Adventurous Rentals! </h2>
+                <h2>Honda Motor Scooters</h2>
+                <h3>• Honda Metropolitan (49cc): Perfect for solo travelers looking to zip around the island
+                    effortlessly.<br>
+                    Enjoy the breeze as you cruise through the scenic routes.</h3>
+                <br>
+
+                <img src="images/metro.webp" alt="Honda Metropolitan" loading="lazy">
+
+                <h3>• Honda Dio (110cc): Ideal for couples or friends! This two-person scooter offers a bit more power
+                    for
+                    exploring Cozumel’s hidden gems together.</h3>
+                <br>
+
+                <img src="images/dio.webp" alt="Honda Dio" loading="lazy">
+
+                <h3>• Honda PCX150 (149cc): Experience comfort and style on this powerful two-person scooter, perfect
+                    for
+                    longer journeys around the island.</h3>
+                <br>
+
+                <img src="images/pcx150.webp" alt="Honda PCX150" loading="lazy">
+
+                <h2>Side-by-Side ATVs</h2>
+                <h3>• Honda Pioneer 1000: Gather your friends or family and embark on an exciting adventure! This
+                    four-person ATV is perfect for exploring Cozumel’s rugged terrains and secluded beaches.</h3>
+                <br>
+
+                <img src="images/pioneer.webp" alt="Honda Pioneer" loading="lazy">
+
+                <h2>Jeeps</h2>
+                <h3>• Jeep Wrangler - 4 Door Manual with A/C: Accommodating up to five people, this Jeep is great for
+                    groups
+                    wanting a comfortable yet thrilling ride.<br>
+                    The A/C ensures you stay cool while exploring.</h3>
+                <br>
+
+
+                <img src="images/jeep4door.webp" alt="Jeep 4 Door" loading="lazy">
+
+                <h3>• Jeep Wrangler - 2 Door Open Air Manual: Feel the wind in your hair and the sun on your face
+                    with
+                    this
+                    four-person Jeep.<br>
+                    Perfect for those who crave an open-air adventure on Cozumel’s untamed roads.</h3>
+                <br>
+
+                <img src="images/jeep2door.webp" alt="Jeep 2 Door" loading="lazy">
+
+
+
+                <h2> Why Choose Us?</h2>
+                <br>
+                <h3>With two locations to serve you, escape the touristy western side and discover the island’s
+                    unspoiled
+                    southern and eastern coasts.<br>
+                    Our vehicles are perfect for the intrepid traveler eager to uncover Cozumel’s natural beauty at
+                    their
+                    own pace.</h3>
+                <br>
+                <h2>Book now and start your adventure as soon as you arrive!</h2>
+            </div>
+
+
+            <div class="adventure">
+                <p>Reserve ahead or walk ins welcome!</p>
+                <p>Main Location: </p>
+                <p></p>
+
+                <h3>Today's Weather:</h3>
+                <div id="weather"></div>
+                <h3>Tomorrow's Weather:</h3>
+                <div id="forecast"></div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="scoots-footer">
+
+            <img src="images/scoots-logo.webp" alt="scoots logo">
+            <h3>Scoots - Vacation Rentals</h3>
+            <h4>Phone: 1-800-GoScoots</h4>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+            <p><span id="copyright"></span>Scoots - Vacation Rentals</p>
+        </div>
+        <div class="project">
+            <p> Lowry Williams | WDD 230 Project | </p>
+            <a href="attribution.html"> Attributions</a>
+            <span id="lastModified"></span>
+        </div>
+    </footer>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
