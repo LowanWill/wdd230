@@ -243,7 +243,7 @@ a:visited {
 footer {
    
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--lightest-color);
     justify-content: center;
     align-items: center;
     padding: .8em;
