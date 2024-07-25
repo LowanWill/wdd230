@@ -5,23 +5,24 @@ document.addEventListener('DOMContentLoaded', function () {
     getPricesData();
 });
 
+
 async function getPricesData() {
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             displayPrices(data.rentals);
         } else {
-            throw new Error("failed to fetch prices");
+            throw new Error('Failed to fetch prices');
         }
     } catch (error) {
-        console.log("error fetching prices: ", error);
+        console.log('error fetching prices:', error);
     }
 }
 
 const displayPrices = (rentals) => {
-    getPricesData.forEach((rental) => {
+    rentals.forEach((rental) => {
         let row = document.creatElement("tr");
         let type = document.creatElement("td");
         let max = document.createElement("td");
