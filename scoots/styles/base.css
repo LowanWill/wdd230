@@ -344,15 +344,18 @@ thead:first-child {
     font-weight: 700;
  }
 
- .reserve h2 {
+ .reserve h3 {
     font-family: "Alegreya Sans SC";
     color: var(--secondary-color);
+    font-size: 1.75em;
     text-align: center;
+    
  }
 
  .reserve p {
     font-family: "Merriweather Sans";
     text-align: center;
+    color: var(--secondary-color);
     
  }
 
