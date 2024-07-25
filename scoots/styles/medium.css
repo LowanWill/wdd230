@@ -29,4 +29,11 @@
     display: none;
   }
 
+  .scoots-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+  }
+
 }
