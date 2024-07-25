@@ -11,7 +11,7 @@
     <meta property="og:title"
         content="Scoots Final Website Project belonging to Lowry Williams for WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://lowanwill.github.io/wdd230/scoots/images/###">
+    <meta property="og:image" content="https://lowanwill.github.io/wdd230/scoots/images/scoots-logo.webp">
     <meta property="og:url" content="https://lowanwill.github.io/wdd230/scoots">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -21,17 +21,141 @@
 </head>
 
 <body>
+    <div id="banner">
+        <span class="close-btn" id="closeBtn">x</span>
+        <div id="max-temp"></div>
+    </div>
     <header>
+        <img src="images/scoots-logo.webp" alt="scoots logo">
+        <div>
+            <h1>Scoots - Vacation Rentals</h1>
+            <h2>Scooters, Jeeps, and ATVs</h2>
+        </div>
 
     </header>
+    <a id="menu" href="#"></a>
     <nav>
-
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-    <main>
+    <main class="reserve">
+        <div class="terms">
+            <h2>Rental Agreement Terms:</h2>
+            <ol>
+                <li><span>A $50 security deposit is required to confirm reservations.</span></li>
+                <li><span>A valid drivers license is required in hand at the time of rental.</span></li>
+                <li><span>No one under the age of 12 years of age are allowed to ride on the scooters.</span></li>
+                <li><span>Fuel charge is not included.</span></li>
+                <li><span>Unlimited mileage.</span></li>
+                <li><span>Liability insurance is included.</span></li>
+                <li><span>Damage insurance is available for purchase.</span></li>
+                <li><span>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</span></li>
+                <li><span>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</span></li>
+                <li><span>Rentals may be returned to either physical location.</span></li>
+            </ol>
+            <p>When renting from Scoots, you agree to abide by the above terms of the Rental Agreement.</p>
+        </div>
+        <h2>Make Your Reservation</h2>
+        <p> Please complete the form below to complete your reservation.</p>
+        <div class="form">
+            <form method="get" action="thankyou.html" class="reservation">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Mobile Phone Number* <input type="tel" name="phone" id="phone" placeholder="12345678"
+                            required></label>
+                    <label>Email* <input type="email" name="email" id="email" placeholder="address@emailprovider.com"
+                            required> <span class="error-message"></span></label>
+                    <label>Home State or Country* <input type="text" name="country" id="country" required></label>
+                    <label>Cruise Line (If applicable): <input type="text" name="cruise" id="cruise"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Rental Information</legend>
+                    <label>Date* <input type="date" name="date" id="date" required></label>
+                    <label>Time* <input type="time" name="time" id="time" required></label>
+
+                    <div>Rental Length</div>
+                    <label><input type="radio" name="length" value="half" required> Half Day</label>
+                    <label><input type="radio" name="length" value="full" required> Full Day</label>
+                    <label>How many days (If applicable): <input type="number" name="days" id="days"></label>
+
+                    <div>Location</div>
+                    <label><input type="radio" name="location" value="delivery" required> Delivery</label>
+                    <label><input type="radio" name="location" value="pickup" required> Pickup</label>
+                    <label>Delivery Address (If applicable): <input type="text" name="delivery-address"
+                            id="delivery-address"></label>
+                    <label>Pickup locations (If applicable):
+                        <select name="location">
+                            <option value="">Please Select</option>
+                            <option value="downtown">Downtown Cozumel</option>
+                            <option value="maya">Terminal Puerta Maya</option>
+                        </select>
+                    </label>
+                    <label>Vehicles*
+                        <select name="vehicles" required>
+                            <option value="">Please Select</option>
+                            <option value="scooter1">Honda Metro Scooter</option>
+                            <option value="scooter2">Honda Dio scooter</option>
+                            <option value="scooter3">Honda PCX150</option>
+                            <option value="atv">Honda Pioneer ATV</option>
+                            <option value="Jeep1">Jeep Wrangler - 4 door with a/c</option>
+                            <option value="Jeep2">Jeep Wrangler - 2 door</option>
+                        </select>
+                    </label>
+                    <label>Number of Passengers*
+                        <select name="passengers" required>
+                            <option value="">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </label>
+                    <div class="textarea">
+                        <label for="comments">Special Accommodations/Comments:</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                    <label><input type="checkbox" name="damage" id="damage"> I want to add Damage Insurance</label>
+                    <label><input type="checkbox" name="conditions" id="conditions" required> I read and accept the
+                        rental agreement information</label>
+                </fieldset>
+
+                <input type="submit" value="Reserve Now!">
+
+            </form>
+        </div>
+
+
 
     </main>
     <footer>
+        <div class="scoots-footer">
 
+            <img src="images/scoots-logo.webp" alt="scoots logo">
+            <h3>Scoots - Vacation Rentals</h3>
+            <h4>Phone: 1-800-GoScoots</h4>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+            <p><span id="copyright"></span>Scoots - Vacation Rentals</p>
+        </div>
+        <div class="project">
+            <p> Lowry Williams | WDD 230 Project | </p>
+            <a href="attribution.html"> Attributions</a>
+            <span id="lastModified"></span>
+        </div>
     </footer>
-    <script></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
