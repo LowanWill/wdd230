@@ -23,8 +23,8 @@ async function getPricesData() {
 
 const displayPrices = (rentals) => {
     rentals.forEach((rental) => {
-        let row = document.creatElement("tr");
-        let type = document.creatElement("td");
+        let row = document.createElement("tr");
+        let type = document.createElement("td");
         let max = document.createElement("td");
         let resHalfDay = document.createElement("td");
         let resFullDay = document.createElement("td");
