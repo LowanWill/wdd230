@@ -255,6 +255,10 @@ footer img {
     max-width: 100px;
 }
 
+footer h3, p, a {
+    color: var(--font-family);
+}
+
 /* Rentals*/
 
 .rental {
